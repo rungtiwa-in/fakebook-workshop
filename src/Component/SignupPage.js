@@ -1,8 +1,13 @@
 import React from 'react';
-import { Form, Input, Button, Row, Col } from 'antd';
+import { Link } from "react-router-dom";
+import {
+    Form,
+    Input,
+    Button,
+    Row,
+    Col
+} from 'antd';
 import { FacebookFilled } from '@ant-design/icons';
-// import { faHome } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class SignupPage extends React.Component {
     constructor() {
@@ -36,7 +41,7 @@ class SignupPage extends React.Component {
                                 <Input />
                             </Form.Item>
                             <div className="center">
-                                <Button type="primary" htmlType="submit"> Sign Up </Button>
+                                <Button type="primary" htmlType="submit"><Link to="/">Sign Up</Link></Button>
                             </div>
                         </Form>
                     </Col>

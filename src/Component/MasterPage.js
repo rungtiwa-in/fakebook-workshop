@@ -1,7 +1,13 @@
 import React from 'react';
 import FeedPage from './FeedPage';
+import { Link } from "react-router-dom";
 import 'antd/dist/antd.css';
-import { Layout, Menu, Dropdown, Avatar } from 'antd';
+import {
+    Layout,
+    Menu,
+    Dropdown,
+    Avatar
+} from 'antd';
 import { FacebookFilled, DownOutlined, UserOutlined } from '@ant-design/icons';
 import '../Style/App.css';
 
@@ -18,14 +24,14 @@ class Home extends React.Component {
         const menu = (
             <Menu>
                 <Menu.Item>
-                    <a target="_blank" href="#">ดูรายชื่อเพื่อน</a>
+                    <Link to="/">ดูรายชื่อเพื่อน</Link>
                 </Menu.Item>
                 <Menu.Item>
-                    <a target="_blank" href="#">เปลี่ยนรหัสผ่าน</a>
+                    <Link to="/">เปลี่ยนรหัสผ่าน</Link>
                 </Menu.Item>
                 <Menu.Divider />
                 <Menu.Item>
-                    <a target="_blank" href="#">ออกจากระบบ</a>
+                    <Link to="/login">ออกจากระบบ</Link>
                 </Menu.Item>
             </Menu>
         );
@@ -34,13 +40,13 @@ class Home extends React.Component {
             <Layout className="layout">
                 <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
                     <div className="logo" >
-                        <FacebookFilled />
+                        <Link to="/"><FacebookFilled /></Link>
                     </div>
-                    <div className="right">
+                    <div className="right nav-profile">
                         <Dropdown overlay={menu}>
                             <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
-                                <span >{this.state.profileName}</span>
-                                <Avatar icon={<UserOutlined />} />
+                                <span className="mr-10">{this.state.profileName}</span>
+                                <Avatar icon={<UserOutlined />} className="mr-10" />
                                 <DownOutlined />
                             </a>
                         </Dropdown>

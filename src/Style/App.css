@@ -41,7 +41,7 @@
   float: left;
   font-size: 32px;
   margin-right: 10px;
-  color: #fff;
+  color: #005dca;
 }
 
 .logo-l {
@@ -75,8 +75,12 @@
 }
 
 .ant-card {
-  width: 500px;
+  width: 600px;
   margin: auto;
+}
+
+.ant-card.mb-20 {
+  margin-bottom: 20px;
 }
 
 .ant-card-meta {
@@ -85,4 +89,30 @@
 
 .ant-card-meta-title {
   color: #005dca;
+  font-weight: 600;
+}
+
+.ant-card-head {
+  font-weight: 600;
+}
+
+.nav-profile a {
+  color: #fff;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.create-status {
+  display: flex;
+}
+
+.create-status .status-msg {
+  margin-left: 10px;
+  width: 100%;
+}
+
+.btn-gray {
+  background-color: #f2f4f5;
 }
