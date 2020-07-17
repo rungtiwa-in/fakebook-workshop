@@ -7,13 +7,11 @@ import {
     Avatar
 } from 'antd';
 import { FacebookFilled, DownOutlined, UserOutlined } from '@ant-design/icons';
+import data from '../Data/Profile.json'
 
 class Header extends React.Component {
     constructor() {
         super()
-        this.state = {
-            profileName: "Rungtiwa Inha"
-        }
     }
 
     render() {
@@ -40,7 +38,7 @@ class Header extends React.Component {
                 <div className="right nav-profile">
                     <span >
                         <Link to="/profile">
-                            {this.state.profileName}
+                            {data.profilename}
                             <Avatar icon={<UserOutlined />} className="ml-10 mr-10" />
                         </Link>
                     </span>

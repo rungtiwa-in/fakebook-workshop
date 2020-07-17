@@ -18,7 +18,8 @@ class FeedPage extends React.Component {
                 <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
                     <div className="site-layout-background" style={{ padding: 24, minHeight: 380, margin: '16px 0' }}>
                         <CreatePost />
-                        <Post />
+                        <Post isMyPost={true} />
+                        <Post isMyPost={false} />
                     </div>
                 </Content>
             </Layout>

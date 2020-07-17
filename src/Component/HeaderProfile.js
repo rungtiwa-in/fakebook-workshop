@@ -5,13 +5,11 @@ import {
     Avatar,
 } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
+import data from '../Data/Profile.json'
 
 class HeaderProfile extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {
-            profileName: "Rungtiwa Inha"
-        }
     }
 
     render() {
@@ -23,7 +21,7 @@ class HeaderProfile extends React.Component {
                     </Col>
                     <Col span={18}>
                         <div className="profile-name">
-                            {this.state.profileName}
+                            {data.profilename}
                         </div>
                     </Col>
                 </Row>
