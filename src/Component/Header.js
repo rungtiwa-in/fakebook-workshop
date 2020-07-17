@@ -1,8 +1,6 @@
 import React from 'react';
-import CreatePost from './CreatePost';
 import { Link } from "react-router-dom";
 import {
-    Row, Col, Divider,
     Layout,
     Menu,
     Dropdown,
@@ -19,7 +17,7 @@ class Header extends React.Component {
     }
 
     render() {
-        const { Header, Content } = Layout;
+        const { Header } = Layout;
         const menu = (
             <Menu>
                 <Menu.Item>

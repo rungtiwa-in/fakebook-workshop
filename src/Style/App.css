@@ -97,7 +97,7 @@
   font-weight: 600;
 }
 
-.nav-profile a{
+.nav-profile a {
   color: #fff;
 }
 
@@ -145,4 +145,10 @@
 
 .comment-show .comment {
   word-wrap: break-word;
+}
+
+.header-profile .profile-name {
+  font-size: 72px;
+  margin-left: 30px;
+  line-height: 150px;
 }
