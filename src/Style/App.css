@@ -36,3 +36,53 @@
     transform: rotate(360deg);
   }
 }
+
+.logo {
+  float: left;
+  font-size: 32px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.logo-l {
+  color: #4267b2;
+}
+
+.logo-l span {
+  font-size: 150px;
+  margin-top: -8px;
+}
+
+.logo-m {
+  font-size: 72px;
+  color: #4267b2;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.ant-card {
+  width: 500px;
+  margin: auto;
+}
+
+.ant-card-meta {
+  margin-bottom: 10px;
+}
+
+.ant-card-meta-title {
+  color: #005dca;
+}
