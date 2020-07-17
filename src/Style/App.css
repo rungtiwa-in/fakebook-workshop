@@ -90,6 +90,7 @@
 .ant-card-meta-title {
   color: #005dca;
   font-weight: 600;
+  margin-bottom: 0 !important;
 }
 
 .ant-card-head {
@@ -104,6 +105,14 @@
   margin-right: 10px;
 }
 
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .create-status {
   display: flex;
 }
@@ -115,4 +124,25 @@
 
 .btn-gray {
   background-color: #f2f4f5;
+}
+
+.post-content img {
+  width: 100%;
+}
+
+.post-content .ant-divider-horizontal {
+  margin: 10px 0 24px 0;
+}
+
+.comment-input .flex {
+  display: flex;
+}
+
+.comment-show .profile-name {
+  color: #005dca;
+  font-weight: 600;
+}
+
+.comment-show .comment {
+  word-wrap: break-word;
 }

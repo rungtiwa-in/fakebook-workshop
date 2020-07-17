@@ -26,8 +26,12 @@ class CreatePost extends React.Component {
             <div>
                 <Card title="Create Post" className="mb-20">
                     <div className="create-status">
-                        <Avatar icon={<UserOutlined />} />
-                        <div className="status-msg"><TextArea rows={4} value={this.state.status} /></div>
+                        <div>
+                            <Avatar size={48} icon={<UserOutlined />} />
+                        </div>
+                        <div className="status-msg">
+                            <TextArea rows={4} value={this.state.status} />
+                        </div>
                     </div>
                     <Divider />
                     <Button type="text" shape="round" className="btn-gray">
