@@ -1,8 +1,9 @@
 import React from 'react';
-import MasterPage from './Component/MasterPage';
-import ProfilePage from './Component/ProfilePage';
+import FeedPage from './Component/FeedPage';
+import MyProfilePage from './Component/MyProfilePage';
 import LoginPage from './Component/LoginPage';
 import SignupPage from './Component/SignupPage';
+import Header from './Component/Header'
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,8 +23,8 @@ class App extends React.Component {
         <Switch>
           <Route path="/login" component={LoginPage} />
           <Route path="/signup" component={SignupPage} />
-          <Route path="/profile" component={ProfilePage} />
-          <Route path="/" component={MasterPage} />
+          <Route path="/profile" component={MyProfilePage} />
+          <Route path="/" component={FeedPage} />
         </Switch>
       </Router>
     );

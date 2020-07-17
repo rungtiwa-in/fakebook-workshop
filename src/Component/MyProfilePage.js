@@ -1,11 +1,9 @@
 import React from 'react';
-import Post from './Post';
 import CreatePost from './CreatePost';
 import HeaderPage from './Header';
-import 'antd/dist/antd.css';
 import { Layout } from 'antd';
 
-class FeedPage extends React.Component {
+class MyProfilePage extends React.Component {
     constructor() {
         super()
     }
@@ -18,7 +16,6 @@ class FeedPage extends React.Component {
                 <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
                     <div className="site-layout-background" style={{ padding: 24, minHeight: 380, margin: '16px 0' }}>
                         <CreatePost />
-                        <Post />
                     </div>
                 </Content>
             </Layout>
@@ -26,4 +23,4 @@ class FeedPage extends React.Component {
     }
 }
 
-export default FeedPage;
+export default MyProfilePage;
