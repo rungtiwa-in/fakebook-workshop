@@ -1,12 +1,13 @@
 import React from "react";
+import CreatePost from "./CreatePost";
 import HeaderPage from "./Header";
 import HeaderProfile from "./HeaderProfile";
 import Post from "./Post";
-import { Layout, Divider } from "antd";
-import profile from "../Data/Profile.json";
 import data from "../Data/Profile.json";
 
-class FriendProfilePage extends React.Component {
+import { Layout, Divider } from "antd";
+
+class ProfilePage extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -25,9 +26,10 @@ class FriendProfilePage extends React.Component {
               className="site-layout-background"
               style={{ padding: 24, minHeight: 380, margin: "16px 0" }}
             >
-              <HeaderProfile friendProfile={data.friendProfile[0]} />
+              <HeaderProfile profilename={data.profilename} />
               <Divider />
-              <Post isMyPost={false} isMyFriend={true} />
+              <CreatePost />
+              <Post isMyPost={true} />
             </div>
           </Content>
         </Layout>
@@ -36,4 +38,4 @@ class FriendProfilePage extends React.Component {
   }
 }
 
-export default FriendProfilePage;
+export default ProfilePage;

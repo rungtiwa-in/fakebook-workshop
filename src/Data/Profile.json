@@ -3,11 +3,13 @@
   "friendProfile": [
     {
       "id": 1,
-      "name": "Friend Name1"
+      "name": "Friend Name1",
+      "isMyFriend": true
     },
     {
       "id": 2,
-      "name": "Friend Name2"
+      "name": "Friend Name2",
+      "isMyFriend": false
     }
   ]
 }

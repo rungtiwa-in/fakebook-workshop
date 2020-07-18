@@ -1,6 +1,6 @@
 import React from 'react';
 import FeedPage from './Component/FeedPage';
-import MyProfilePage from './Component/MyProfilePage';
+import ProfilePage from './Component/ProfilePage';
 import FriendProfilePage from './Component/FriendProfilePage';
 import LoginPage from './Component/LoginPage';
 import SignupPage from './Component/SignupPage';
@@ -24,7 +24,7 @@ class App extends React.Component {
         <Switch>
           <Route path="/login" component={LoginPage} />
           <Route path="/signup" component={SignupPage} />
-          <Route path="/profile" component={MyProfilePage} />
+          <Route path="/profile" component={ProfilePage} />
           <Route path="/friendprofile" component={FriendProfilePage} />
           <Route path="/" component={FeedPage} />
         </Switch>
