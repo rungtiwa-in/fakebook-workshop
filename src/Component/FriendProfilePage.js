@@ -3,15 +3,16 @@ import CreatePost from './CreatePost';
 import HeaderPage from './Header';
 import HeaderProfile from './HeaderProfile';
 import Post from './Post'
-
 import { Layout, Divider } from 'antd';
+import profile from '../Data/Profile.json'
 
-class MyProfilePage extends React.Component {
+class FriendProfilePage extends React.Component {
     constructor(props) {
         super(props)
     }
 
     render() {
+        console.log(profile.friendProfile[1].name)
         const { Content } = Layout;
         return (
             <div>
@@ -31,4 +32,4 @@ class MyProfilePage extends React.Component {
     }
 }
 
-export default MyProfilePage;
+export default FriendProfilePage;

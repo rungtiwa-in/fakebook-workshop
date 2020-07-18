@@ -1,4 +1,13 @@
-
+{
+  "profilename": "Rungtiwa Inha",
+  "friendProfile": [
     {
-        "profilename" : "Rungtiwa Inha"
+      "id": 1,
+      "name": "Friend Name1"
+    },
+    {
+      "id": 2,
+      "name": "Friend Name2"
     }
+  ]
+}
