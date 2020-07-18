@@ -22,7 +22,7 @@ class Header extends React.Component {
                     <Link to="/">ดูรายชื่อเพื่อน</Link>
                 </Menu.Item>
                 <Menu.Item>
-                    <Link to="/">เปลี่ยนรหัสผ่าน</Link>
+                    <Link to="/changepassword">เปลี่ยนรหัสผ่าน</Link>
                 </Menu.Item>
                 <Menu.Divider />
                 <Menu.Item>
