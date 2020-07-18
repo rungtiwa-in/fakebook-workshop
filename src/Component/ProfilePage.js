@@ -26,7 +26,10 @@ class ProfilePage extends React.Component {
               className="site-layout-background"
               style={{ padding: 24, minHeight: 380, margin: "16px 0" }}
             >
-              <HeaderProfile profilename={data.profilename} />
+              <HeaderProfile
+                profilename={data.profilename}
+                isMyProfile={true}
+              />
               <Divider />
               <CreatePost />
               <Post isMyPost={true} />

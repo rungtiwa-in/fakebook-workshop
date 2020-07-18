@@ -3,7 +3,6 @@ import HeaderPage from "./Header";
 import HeaderProfile from "./HeaderProfile";
 import Post from "./Post";
 import { Layout, Divider } from "antd";
-import profile from "../Data/Profile.json";
 import data from "../Data/Profile.json";
 
 class FriendProfilePage extends React.Component {

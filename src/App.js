@@ -4,7 +4,7 @@ import ProfilePage from './Component/ProfilePage';
 import FriendProfilePage from './Component/FriendProfilePage';
 import LoginPage from './Component/LoginPage';
 import SignupPage from './Component/SignupPage';
-import Header from './Component/Header'
+import UnknowProfilePage from './Component/UnknowProfilePage'
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,6 +26,7 @@ class App extends React.Component {
           <Route path="/signup" component={SignupPage} />
           <Route path="/profile" component={ProfilePage} />
           <Route path="/friendprofile" component={FriendProfilePage} />
+          <Route path="/unknowprofile" component={UnknowProfilePage} />
           <Route path="/" component={FeedPage} />
         </Switch>
       </Router>
