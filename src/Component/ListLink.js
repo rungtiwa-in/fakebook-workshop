@@ -9,7 +9,7 @@ class FriendListPage extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{ display: "initial" }}>
           <Link className="ml-10" to="/login">Login</Link> 
           <Link className="ml-10" to="/signup">Signup</Link> 
           <Link className="ml-10" to="/">Feed</Link>
