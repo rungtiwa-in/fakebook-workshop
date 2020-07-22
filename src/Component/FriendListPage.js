@@ -2,20 +2,20 @@ import React from "react";
 import HeaderPage from "./Header";
 import HeaderProfile from "./HeaderProfile";
 import ListLink from "./ListLink";
-import Post from "./Post";
-import { Layout, Divider } from "antd";
 import data from "../Data/Profile.json";
+import { Divider, Layout, Tabs } from "antd";
+import ShowFriendList from "./ShowFriendList";
 
-class UnknowProfilePage extends React.Component {
+class FriendListPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      isRequest: false,
-    };
   }
 
   render() {
     const { Content } = Layout;
+    const layout = { labelCol: { span: 8 }, wrapperCol: { span: 14 } };
+    const tailLayout = { wrapperCol: { offset: 8, span: 16 } };
+    const { TabPane } = Tabs;
     return (
       <div>
         <Layout className="layout">
@@ -29,11 +29,18 @@ class UnknowProfilePage extends React.Component {
               style={{ padding: 24, minHeight: 380, margin: "16px 0" }}
             >
               <HeaderProfile
-                friendProfile={data.friendRequest[1]}
-                isRequest={this.state.isRequest}
+                profilename={data.profilename}
+                isMyProfile={true}
               />
               <Divider />
-              <Post isMyPost={false} isMyFriend={false} />
+              <Tabs defaultActiveKey="1" centered>
+                <TabPane tab="Friend List" key="1">
+                  <ShowFriendList friendList={data.friendProfile} />
+                </TabPane>
+                <TabPane tab="Friend Request" key="2">
+                  <ShowFriendList friendList={data.friendRequest} />
+                </TabPane>
+              </Tabs>
             </div>
           </Content>
         </Layout>
@@ -42,4 +49,4 @@ class UnknowProfilePage extends React.Component {
   }
 }
 
-export default UnknowProfilePage;
+export default FriendListPage;

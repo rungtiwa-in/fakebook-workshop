@@ -2,6 +2,7 @@ import React from "react";
 import CreatePost from "./CreatePost";
 import HeaderPage from "./Header";
 import HeaderProfile from "./HeaderProfile";
+import ListLink from "./ListLink";
 import Post from "./Post";
 import data from "../Data/Profile.json";
 

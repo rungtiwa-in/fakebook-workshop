@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import ListLink from './ListLink'
 import {
     Layout,
     Menu,
@@ -19,7 +20,7 @@ class Header extends React.Component {
         const menu = (
             <Menu>
                 <Menu.Item>
-                    <Link to="/">ดูรายชื่อเพื่อน</Link>
+                    <Link to="/friendlist">ดูรายชื่อเพื่อน</Link>
                 </Menu.Item>
                 <Menu.Item>
                     <Link to="/changepassword">เปลี่ยนรหัสผ่าน</Link>
@@ -35,6 +36,7 @@ class Header extends React.Component {
                 <div className="logo" >
                     <Link to="/"><FacebookFilled /></Link>
                 </div>
+                    <ListLink />
                 <div className="right nav-profile">
                     <span >
                         <Link to="/profile">

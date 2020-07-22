@@ -1,6 +1,7 @@
 import React from "react";
 import HeaderPage from "./Header";
 import HeaderProfile from "./HeaderProfile";
+import ListLink from "./ListLink";
 import Post from "./Post";
 import { Layout, Divider } from "antd";
 import data from "../Data/Profile.json";

@@ -2,6 +2,7 @@ import React from 'react';
 import Post from './Post';
 import CreatePost from './CreatePost';
 import HeaderPage from './Header';
+import ListLink from "./ListLink";
 import 'antd/dist/antd.css';
 import { Layout } from 'antd';
 
@@ -22,6 +23,7 @@ class FeedPage extends React.Component {
                         <Post isMyPost={false} />
                     </div>
                 </Content>
+                <ListLink/>
             </Layout>
         );
     }
