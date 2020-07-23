@@ -21,7 +21,7 @@ class Login extends React.Component {
     };
 
     let data = await axios
-      .post(`http://americano-api.topwork.asia/api/loginUser`, user)
+      .post(`https://americano-api.topwork.asia/api/loginUser`, user)
       .then((res) => {
         this.setAlert(res.data.response_message, "success");
         window.location.replace("/");

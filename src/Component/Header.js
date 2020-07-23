@@ -1,14 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import ListLink from "./ListLink";
-import { Layout, Menu, Dropdown, Avatar } from "antd";
+import { Layout, Menu, Dropdown, Avatar, Button } from "antd";
 import { FacebookFilled, DownOutlined, UserOutlined } from "@ant-design/icons";
-import data from "../Data/Profile.json";
+import { GetName, Logout } from "../helpers";
 
 class Header extends React.Component {
   constructor() {
     super();
+    this.state = {
+      fullName: "",
+      isLogout: false,
+    };
   }
+
+  componentDidMount() {
+    this.setState({
+      fullName: GetName(),
+    });
+  }
+
+  handleLogout = () => {
+    Logout();
+    this.setState({
+      isLogout: true,
+    });
+  };
 
   render() {
     const { Header } = Layout;
@@ -22,10 +40,15 @@ class Header extends React.Component {
         </Menu.Item>
         <Menu.Divider />
         <Menu.Item>
-          <Link to="/login">ออกจากระบบ</Link>
+          <Button type="link" onClick={this.handleLogout}>
+            ออกจากระบบ
+          </Button>
         </Menu.Item>
       </Menu>
     );
+    if (this.state.isLogout) {
+      return <Redirect to="/login" />;
+    }
     return (
       <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
         <div className="logo">
@@ -37,7 +60,7 @@ class Header extends React.Component {
         <div className="right nav-profile">
           <span>
             <Link to="/profile">
-              {data.profilename}
+              {this.state.fullName}
               <Avatar icon={<UserOutlined />} className="ml-10 mr-10" />
             </Link>
           </span>

@@ -21,7 +21,7 @@ class SignupPage extends React.Component {
     };
 
     let data = await axios
-      .post(`http://americano-api.topwork.asia/api/signup`, user)
+      .post(`https://americano-api.topwork.asia/api/signup`, user)
       .then((res) => {
         this.setAlert(res.data.response_message, "success");
         window.location.replace("/login");
