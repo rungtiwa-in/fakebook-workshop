@@ -16,6 +16,7 @@ import {
 import { UserOutlined, DownOutlined, MoreOutlined } from "@ant-design/icons";
 import { faCommentAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import data from "../Data/Profile.json";
 
 class Post extends React.Component {
   constructor(props) {
@@ -41,7 +42,7 @@ class Post extends React.Component {
             <Col span={22}>
               <Meta
                 avatar={<Avatar size={48} icon={<UserOutlined />} />}
-                title="Rungtiwa Inha"
+                title={data.profilename}
                 description="1 ชั่วโมงที่แล้ว"
               />
             </Col>

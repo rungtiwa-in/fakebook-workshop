@@ -113,6 +113,10 @@
   margin-bottom: 10px;
 }
 
+.mt-10 {
+  margin-top: 10;
+}
+
 .create-status {
   display: flex;
 }
